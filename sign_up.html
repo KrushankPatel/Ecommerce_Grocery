@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="s_img">
+    <form class="signup-form" name="form1" onsubmit="ValidateEmail()" >
+        <div>
+            <h3>Sign Up</h3></div>
+            <input type="text" name="email_n" placeholder="Email" class="box" required><br>
+            <input type="text" name="mobile" placeholder="Mobile Number" class="box" required><br>
+            <input type="password" name="pass1" placeholder="Password" class="box" required><br>
+            <input type="password" name="pass2" placeholder="Confirm Password" class="box" required><br>
+            <input type="submit" name="sub1" value="Sign Up" class="btn">
+        </div>
+    </form>
+    </div>
+
+    <script src="js/validate.js"></script>
+</body>
+</html>

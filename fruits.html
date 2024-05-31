@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+    <!-- cart -->
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groceries </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">products</a>
+        <a href="index.html">categories</a>     
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <div class="searchbox">
+        <div class="searchBar">
+            <input type="search" id="search-box" onkeyup="searchList(event)" autocomplete="off">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="result-box"></div>
+    </div>
+
+    <div class="shopping-cart" id="cart">
+        <div class="cart-content">
+            
+        </div>
+        <div class="total"><h3>total: </h3><h3 class="total-price">₹0</h3></div>
+        <a href="#" class="btn">checkout</a>
+        </div>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="sign_up.html">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+<br><br><br><br><br><br>
+<section class="categories" id="categories">
+    <h1 class="heading"><span>fruits</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/product-14.png" class="p-img">
+            <h3 class="p_title">apple</h3>
+            <div class="price"> ₹13050/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-1.png" class="p-img">
+            <h3 class="p_title">orange</h3>
+            <div class="price"> ₹5675/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-15.png" class="p-img">
+            <h3 class="p_title">mango</h3>
+            <div class="price"> ₹5500/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-3.png" class="p-img">
+            <h3 class="p_title">watermelon</h3>
+            <div class="price"> ₹792/-</div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-16.png" class="p-img">
+            <h3 class="p_title">banana</h3>
+            <div class="price"> ₹2450/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-17.png" class="p-img">
+            <h3 class="p_title">guava</h3>
+            <div class="price"> ₹2325/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-18.png" class="p-img">
+            <h3 class="p_title">pineapple</h3>
+            <div class="price"> ₹4550/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-19.png" class="p-img">
+            <h3 class="p_title">grapes</h3>
+            <div class="price"> ₹3200/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-20.png" class="p-img">
+            <h3 class="p_title">kiwi</h3>
+            <div class="price"> ₹17500/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+        <div class="box">
+            <img src="image/product-21.png" class="p-img">
+            <h3 class="p_title">strawberry</h3>
+            <div class="price"> ₹14000/- </div>
+            <button type="button" class="add-btn">add to cart</button>
+        </div>
+
+</section><br><br>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> groceries <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Check our socials</p>
+            <div class="share">
+                <a href="https://facebook.com" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com" class="fab fa-twitter"></a>
+                <a href="https://instagram.com" class="fab fa-instagram"></a>
+                <a href="https://linkedin.com" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="https://gmail.com" class="links"> <i class="fas fa-envelope"></i> grocery@email.com </a>
+            <a href="https://maps.google.com" class="links"> <i class="fas fa-map-marker-alt"></i> gujarat, india - 322000 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- cart js file link -->
+<script src="js/addtocart.js"></script>
+
+<!-- search js file link -->
+<script src="js/searchitems.js"></script>
+
+</body>
+</html>
